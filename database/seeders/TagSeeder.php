@@ -17,13 +17,7 @@ class ArticleTagSeeder extends Seeder
      * @return void
      */
     public function run()
-    {
-        $articles = Article::all();
-
-        Tag::all()->each(function ($tag) use ($articles) {
-            $tag->articles()->attach(
-                $articles->random(rand(0, 10))->pluck('id')->toArray()
-            );
-        });
+    {        
+        TagFactory::times(100)->create();
     }
 }
