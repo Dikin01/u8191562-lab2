@@ -28,9 +28,9 @@ class CountArticles extends Command
      */
     public function handle()
     {
-        $tag_id = $this->argument('id');
-        $article_count = DB::table('article_tags')->where('tag_id', '=', $tag_id)->count();
-        echo "Count articles with tag's id $tag_id: $article_count\n";
-        return $article_count;
+        $tagId = $this->argument('id');
+        $articleCount = DB::table('article_tags')->where('tag_id', '=', $tagId)->count();
+        echo "Count articles with tag's id $tagId: $articleCount\n";
+        return $articleCount;
     }
 }
