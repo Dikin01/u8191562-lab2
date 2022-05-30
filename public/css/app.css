@@ -1,0 +1,39 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: lightblue;
+}
+caption{
+    font-size: 30px;
+}
+.wrapper{
+    padding: 15px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+thead{
+    text-align: left;
+}
+table{
+    margin-bottom: 30px;
+}
+.message{
+    text-align: center;
+}
+.filters{
+    display: flex;
+    justify-content: center;
+}
+tr{
+    width: min-content;
+}
+td{
+    width: auto;
+}
+svg{
+    width: 15px;
+}
+
+.wdth-2{
+    width: 20%;
+}
